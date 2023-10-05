@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual é o menor valor</title>
+</head>
+<body>
+    <script>
+        var x = prompt("Digite um número: ")
+        var y = prompt("Digite outro número: ")
+
+        x = parseFloat(x); //parseFloat foi usado para converter o valor digitado pelo usuario em float
+        y = parseFloat(y);
+
+        if(x < y){
+            document.write("O número " + x + " é menor que o número " + y)
+        }
+        else if(x == y){
+            document.write("Os números são iguais")
+        }
+        else {
+            document.write("O número " + y + " é menor que o número " + x)
+        }
+    </script>
+</body>
+</html>

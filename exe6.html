@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bom dia</title>
+</head>
+<body>
+    <script>
+        var sexo = prompt("Digite seu sexo, [M = Masculino, F = Feminino]: ").toUpperCase() //toUpperCase foi usado para mudar tudo que o usuário digitou em letra maiuscula
+        switch (sexo) {
+            case "M":
+                document.write("Seja bem-vindo, Senhor")
+                break
+            case "F":
+                document.write("Seja bem-vinda, Senhora")
+                break
+            default:
+                document.write("Valor inválido")
+                break
+        }
+    </script>
+</body>
+</html>

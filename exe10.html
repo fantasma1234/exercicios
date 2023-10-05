@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aposentadoria</title>
+</head>
+<body>
+    <script>
+        var idade = prompt("Digite sua idade: ")
+        var sexo = prompt("Digite seu sexo, [M = Masculino, F = Feminino]: ").toUpperCase()
+        var tempo = prompt("Digite seu tempo de serviço: ")
+
+        idade = parseInt(idade);
+        tempo = parseInt(tempo);
+
+        if(sexo == "M" && idade >= 65 && tempo >= 30){
+            document.write("Você tem direito a aposentadoria")
+        }
+        else if(sexo == "F" && idade >= 60 && tempo >= 25){
+            document.write("Você tem direito a aposentadoria")
+        }
+        else{
+            document.write("Você não tem direito a aposentadoria ainda")
+        }
+    </script>
+</body>
+</html>
